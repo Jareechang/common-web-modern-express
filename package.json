@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "@babel/preset-typescript": "^7.7.7",
-    "@common-web/babel": "^1.0.0",
+    "@common-web/babel": "1.x.x",
     "@common-web/rollup": "^1.0.15",
     "@common-web/ts-config": "^1.0.0",
     "express": "^4.17.1"

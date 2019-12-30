@@ -806,7 +806,7 @@
     "@babel/plugin-transform-react-jsx-self" "^7.7.4"
     "@babel/plugin-transform-react-jsx-source" "^7.7.4"
 
-"@babel/preset-typescript@^7.7.4", "@babel/preset-typescript@^7.7.7":
+"@babel/preset-typescript@^7.7.7":
   version "7.7.7"
   resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.7.7.tgz#69ddea54e8b4e491ccbf94147e673b2ac6e11e2e"
   integrity sha512-Apg0sCTovsSA+pEaI8efnA44b9x4X/7z4P8vsWMiN8rSUaM4y4+Shl5NMWnMl6njvt96+CEb6jwpXAKYAVCSQA==
@@ -854,10 +854,10 @@
     lodash "^4.17.13"
     to-fast-properties "^2.0.0"
 
-"@common-web/babel@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@common-web/babel/-/babel-1.0.0.tgz#12c92e17fb3f645867c327624ed6726f2cad8b13"
-  integrity sha512-lT/rl97GnyEx4VMvJjoqkaGsErhGbn0cdAm00heJy/Oo9k3iSzh6/s/vPzNptwtnGAz6rOCwzNz682lKLDgF7Q==
+"@common-web/babel@1.x.x":
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/@common-web/babel/-/babel-1.0.2.tgz#9d2997fdeec433f4abc011e1f645cfbda47886ce"
+  integrity sha512-gwTuENs8krpevhCUTyXKSTwhL9ck7uDzjMRngGgBVT8O+5cEinTf5Ubq+sqiT2cgh6lQwwTFEq1XBqO43uWYhA==
   dependencies:
     "@babel/plugin-proposal-class-properties" "^7.7.4"
     "@babel/plugin-proposal-decorators" "^7.7.4"
@@ -869,7 +869,8 @@
     "@babel/plugin-transform-runtime" "^7.7.6"
     "@babel/preset-env" "^7.7.6"
     "@babel/preset-react" "^7.7.4"
-    "@babel/preset-typescript" "^7.7.4"
+    "@babel/preset-typescript" "^7.7.7"
+    "@babel/runtime" "^7.7.7"
 
 "@common-web/rollup@^1.0.15":
   version "1.0.15"
