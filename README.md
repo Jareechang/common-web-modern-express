@@ -33,3 +33,37 @@ yarn run run-server
 // runs the server in watch mode
 yarn run watch-server
 ```
+
+3. Test out API 
+
+**Request:**
+
+```
+curl http://localhost:3000/api/test | jq
+
+```
+
+**Response:**
+
+```json
+{
+  "data": [
+    {
+      "name": "Bob",
+      "age": 32
+    },
+    {
+      "name": "Judy",
+      "age": 33
+    },
+    {
+      "name": "Jill",
+      "age": 28
+    },
+    {
+      "name": "Sally",
+      "age": 22
+    }
+  ]
+}
+```
