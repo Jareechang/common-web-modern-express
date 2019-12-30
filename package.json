@@ -1,0 +1,29 @@
+{
+  "name": "common-web-modern-express",
+  "version": "1.0.0",
+  "description": "Demonstration of common-web package to run express",
+  "main": "index.js",
+  "author": "Jerry Chang",
+  "license": "MIT",
+  "scripts": {
+    "build": "cross-env-shell \"rm -rf ./dist\" && yarn run prettier && rollup -c ",
+    "run-server": "yarn run build && node ./dist/index.js",
+    "watch-server": "nodemon --watch src -e ts,js --exec \"yarn run run-server\"",
+    "prettier": "prettier --write -l \"src/**/*.ts\""
+  },
+  "dependencies": {
+    "@babel/preset-typescript": "^7.7.7",
+    "@common-web/babel": "^1.0.0",
+    "@common-web/rollup": "^1.0.15",
+    "@common-web/ts-config": "^1.0.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/runtime": "^7.7.7",
+    "cross-env": "^6.0.3",
+    "nodemon": "^2.0.2",
+    "prettier": "^1.19.1"
+  }
+}
