@@ -872,7 +872,12 @@
     "@babel/preset-typescript" "^7.7.7"
     "@babel/runtime" "^7.7.7"
 
-"@common-web/rollup@^1.0.15":
+"@common-web/prettier@1.x.x":
+  version "1.0.7"
+  resolved "https://registry.yarnpkg.com/@common-web/prettier/-/prettier-1.0.7.tgz#4c4adc02747c322ad9fb63381ea0b8a6a7e95c73"
+  integrity sha512-u1gDwBbZJSaLByZcFMxrbYXtb64C82uO7QbOd/uAx8dvHByAN7eJo6qReRyKEZU0GwttK0lGrBmeYMVRpAYZ0Q==
+
+"@common-web/rollup@1.x.x":
   version "1.0.15"
   resolved "https://registry.yarnpkg.com/@common-web/rollup/-/rollup-1.0.15.tgz#89d15df9a329fb3a0656df612c886afe35b8ddd2"
   integrity sha512-jBv2y15kaEpRr74bZ8m3HKIy/3S+dqOjbvFjF4V5xlGt5FPb226bQ/uCeKeCK0qK4ADTi8RlvPu5N79ea99clA==
@@ -885,7 +890,7 @@
     rollup-plugin-eslint "^7.0.0"
     typescript "^3.7.4"
 
-"@common-web/ts-config@^1.0.0":
+"@common-web/ts-config@1.x.x":
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/@common-web/ts-config/-/ts-config-1.0.0.tgz#151d2e627931a1e151319df2ed31c240ee6df3e9"
   integrity sha512-unXKR9gEIJupAUNQVygQPL2v8ejSeui96DTjKVAYD+TmQdqBsnnK2JE4H3jQRyVsA585Yh0I+3A6XhRB/Rk6UQ==
