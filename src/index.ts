@@ -3,7 +3,15 @@ import express from 'express';
 const app = express();
 const port = 3000;
 
+interface PeopleData {
+    name: string;
+    age: number;
+}
+
 class People {
+    name: string;
+    age: number;
+
     constructor(name: string, age: number) {
         this.name = name;
         this.age = age;
@@ -11,10 +19,10 @@ class People {
 }
 
 interface ApiResponse<T> {
-    data: T;
+    data: T | null;
 }
 
-type CompanyApiResponse = ApiResponse<Array<People>>;
+type CompanyApiResponse = ApiResponse<Array<PeopleData>>;
 
 function fetchData(): Promise<CompanyApiResponse> {
     return new Promise((resolve, reject) => {
@@ -32,7 +40,10 @@ function fetchData(): Promise<CompanyApiResponse> {
 }
 
 app.get('/api/test', async (req, res) => {
-    let response: ApiResponse<CompanyApiResponse> = (await fetchData()) ?? {};
+    const defaultResponse: CompanyApiResponse = {
+        data: null
+    };
+    let response: CompanyApiResponse = (await fetchData()) ?? defaultResponse;
     res.json(response);
 });
 

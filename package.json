@@ -5,17 +5,25 @@
   "main": "index.js",
   "author": "Jerry Chang",
   "license": "MIT",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "scripts": {
     "build": "cross-env-shell \"rm -rf ./dist\" && yarn run prettier && rollup -c ",
+    "ts-check": "tsc -p tsconfig.json --noEmit",
     "run-server": "yarn run build && node ./dist/index.js",
     "watch-server": "nodemon --watch src -e ts,js --exec \"yarn run run-server\"",
     "prettier": "prettier --write -l \"src/**/*.ts\""
   },
   "dependencies": {
     "@common-web/babel": "1.x.x",
+    "@common-web/lint-staged": "1.x.x",
     "@common-web/prettier": "1.x.x",
     "@common-web/rollup": "1.x.x",
     "@common-web/ts-config": "1.x.x",
+    "@types/express": "^4.17.2",
     "express": "^4.17.1"
   },
   "devDependencies": {
