@@ -9,6 +9,7 @@ An Example of running an express.js api using with @common-web utils. Leverage l
 - [@common-web/babel](https://github.com/Jareechang/common-web/tree/master/packages/babel) (transpiler)
 - [@common-web/ts-config](https://github.com/Jareechang/common-web/tree/master/packages/ts-config) (ts-config)
 - [@common-web/prettier](https://github.com/Jareechang/common-web/tree/master/packages/prettier) (prettier)
+- [@common-web/lint-staged](https://github.com/Jareechang/common-web/tree/master/packages/lint-staged) (lint-staged)
 - nodemon (watch mode)
 
 ### Getting Started 
